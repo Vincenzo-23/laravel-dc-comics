@@ -32,7 +32,7 @@ Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.c
 
 // show
 
-Route::get('/comics{comic}', [ComicController::class, 'show'])->name('comics.show');
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
 
 
 // store
