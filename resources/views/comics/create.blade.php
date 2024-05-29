@@ -10,7 +10,7 @@
       <h2 class="fs-2">Add a new comic</h2>
     </div>
     <div class="container">
-      <form action="" method="POST">
+      <form action="{{route('comics.store')}}" method="POST">
 
         @csrf 
 
