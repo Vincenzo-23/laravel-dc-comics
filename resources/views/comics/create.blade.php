@@ -6,10 +6,12 @@
 
 <main>
   <section>
-    <div class="container">
+
+    <div class="container mb-4">
       <h2 class="fs-2">Add a new comic</h2>
     </div>
     <div class="container">
+
       <form action="{{route('comics.store')}}" method="POST">
 
         @csrf 

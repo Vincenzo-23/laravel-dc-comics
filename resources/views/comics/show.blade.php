@@ -11,6 +11,9 @@
     </div>
     <div class="container">
       <ul>
+        <li class="mt-4 mb-4">
+          <img src="{{ $comic->thumb }}" alt="Comic cover" height="200" width="200">
+        </li>
         <li>Type: {{ $comic->type }}</li>
         <li>Price:: {{ $comic->price }}</li>
         <li>Sale Date: {{ $comic->sale_date }}</li>
