@@ -23,3 +23,11 @@ Route::get('/', function () {
 // index
 
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
+
+
+
+
+
+// show
+
+Route::get('/comics{comic}', [ComicController::class, 'show'])->name('comics.show');
