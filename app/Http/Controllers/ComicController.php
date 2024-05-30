@@ -31,7 +31,13 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        dump('Store avvenuto correttamente!');
+        $form_data = $request->all();  // recuperiamo i paramentri che arrivano dal form
+
+        $new_comic = new Comic(); 
+
+        $new_comic = Comic::create($form_data);
+
+        return to_route('comics.show', $new_comic);
     }
 
     /**

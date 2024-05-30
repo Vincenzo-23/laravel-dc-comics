@@ -14,16 +14,16 @@
         <li class="mt-4 mb-4">
           <img src="{{ $comic->thumb }}" alt="Comic cover" height="200" width="200">
         </li>
-        <li>Type: {{ $comic->type }}</li>
-        <li>Price:: {{ $comic->price }}</li>
-        <li>Sale Date: {{ $comic->sale_date }}</li>
-        <li>Writer: {{ $comic->writers }}</li>
-        <li>Artists: {{ $comic->artists }}</li>
+        <li><strong>Type: </strong>{{ $comic->type }}</li>
+        <li><strong>Price:: </strong>{{ $comic->price }}</li>
+        <li><strong>Sale Date: </strong>{{ $comic->sale_date }}</li>
+        <li><strong>Writer: </strong>{{ $comic->writers }}</li>
+        <li><strong>Artists: </strong>{{ $comic->artists }}</li>
       </ul>
     </div>
     <div class="container">
       <div>
-        {!! $comic->description !!}
+        <strong>Description: </strong>{!! $comic->description !!}
       </div>
     </div>
   </section>

@@ -21,7 +21,6 @@
           <tr>
             <th>ID</th>
             <th>Title</th>
-            <th>Description</th>
             <th>Image</th>
             <th>Price</th>
             <th>Series</th>
@@ -40,7 +39,6 @@
                         {{ $comic->title }}
                       </a>
                   </td>
-                  <td>{{ $comic->description}}</td>
                   <td>
                       <a href="{{ route('comics.show', $comic) }}">
                         <img src="{{ $comic->thumb }}" height="144" width="144" alt="Comic cover">
