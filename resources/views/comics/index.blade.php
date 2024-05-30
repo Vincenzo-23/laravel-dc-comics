@@ -50,6 +50,7 @@
                   <td>{{ $comic->type }}</td>
                   <td>{{ $comic->artists }}</td>
                   <td>{{ $comic->writers }}</td>
+                  <td><a class="text-primary" href="{{ route('comics.edit', $comic) }}">Edit</a></td>
               </tr>
           @endforeach
         </tbody>

@@ -15,7 +15,7 @@
           <img src="{{ $comic->thumb }}" alt="Comic cover" height="200" width="200">
         </li>
         <li><strong>Type: </strong>{{ $comic->type }}</li>
-        <li><strong>Price:: </strong>{{ $comic->price }}</li>
+        <li><strong>Price: </strong>{{ $comic->price }}</li>
         <li><strong>Sale Date: </strong>{{ $comic->sale_date }}</li>
         <li><strong>Writer: </strong>{{ $comic->writers }}</li>
         <li><strong>Artists: </strong>{{ $comic->artists }}</li>
