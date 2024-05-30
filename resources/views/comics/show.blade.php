@@ -7,7 +7,10 @@
 <main>
   <section>
     <div class="container">
-      <h1 class="fs-2">{{ $comic->title }}</h1>
+      <div class="row align-items-center">
+        <h1 class="fs-2 col-auto">{{ $comic->title }}</h1>
+        <a class="text-primary ms-auto col-auto" href="{{ route('comics.edit', $comic) }}">Edit</a>
+      </div>
     </div>
     <div class="container">
       <ul>

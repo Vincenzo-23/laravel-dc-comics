@@ -50,7 +50,16 @@
                   <td>{{ $comic->type }}</td>
                   <td>{{ $comic->artists }}</td>
                   <td>{{ $comic->writers }}</td>
-                  <td><a class="text-primary" href="{{ route('comics.edit', $comic) }}">Edit</a></td>
+                  <td class="pt-3"><a class="text-primary" href="{{ route('comics.edit', $comic) }}">Edit</a></td>
+                  <td>
+                    <form action="{{ route('comics.destroy', $comic) }}" method="POST">
+  
+                      @csrf
+                      @method('DELETE')
+  
+                      <button class="btn btn-link link-danger">Delete</button>
+                    </form>
+                  </td>
               </tr>
           @endforeach
         </tbody>
